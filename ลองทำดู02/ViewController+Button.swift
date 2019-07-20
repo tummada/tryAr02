@@ -11,9 +11,9 @@ import SceneKit
 
 extension ViewController {
      
-    /*
+    
     func createStackView(with layout: NSLayoutConstraint.Axis) -> UIStackView {
-//        let stackView = UIStackView()
+        let stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = layout
         stackView.distribution = .fillEqually
@@ -47,5 +47,5 @@ extension ViewController {
                 }
         
     }
-    */
+    
 }
