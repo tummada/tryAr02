@@ -11,8 +11,18 @@ import UIKit
 
 class Config {
     
+    /* สีปุ่ม ประเภทผ้าม่าน */
+    let btnCurtainTypeColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2);
+    
+    /* รูปประเภทผ้าม่าน */
+    let btnCurtainTypePicture = [UIImage(named: "ม่านตาไก่.png"),
+                                 UIImage(named: "ม่านจีบ.png"),
+                                 UIImage(named: "ม่านพับ.png")]
+    
+    let btnCurtainTypeTxt = ["ม่านตาไก่","ม่านจีบ","ม่านพับ"]
+    
     let todoForStage : [String] = [ "วัดขนาดความกว้าง และ ความสูง",
-                                    "ขั้นตอนที่ 2",
+                                    "เลือกประเภทของผ้าม่าน",
                                     "ขั้นตอนที่ 3",
                                     "ขั้นตอนที่ 4",
                                     "ขั้นตอนที่ 5",
@@ -28,6 +38,7 @@ class Config {
         
         /*
          B1 : ปุ่ม clear ความกว้าง ความสูง
+         B2 : ปุ่ม ไปเลือกชนิดของผ้าม่าน (ม่านจีบ,ม่านตาไก่,​ม่านพับ)
          */
     ]
 }

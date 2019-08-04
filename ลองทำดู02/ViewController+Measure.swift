@@ -60,21 +60,7 @@ extension ViewController {
             myHeight = calculate(start: myDotNodes[2], end: myDotNodes[3], isDrawLine: true)
             print(" Height = \(myHeight)")
             
-            let buttons = createButtons(num: 5)
-            stackView = createStackView(with: NSLayoutConstraint.Axis.horizontal)
-            
-            buttons.forEach { button in
-                stackView.addArrangedSubview(button)
-            }
-            
-            sceneView.addSubview(stackView)
-            
-            stackView.bottomAnchor.constraint(equalTo: sceneView.bottomAnchor, constant: -5.0).isActive = true
-            stackView.leftAnchor.constraint(equalTo: sceneView.leftAnchor, constant: 5.0).isActive = true
-            stackView.rightAnchor.constraint(equalTo: sceneView.rightAnchor, constant: -5.0).isActive = true
-//            stackView.centerXAnchor.constraint(equalTo: sceneView.centerXAnchor).isActive = true
-//            stackView.centerYAnchor.constraint(equalTo: sceneView.bottomAnchor).isActive = true
-            
+            btnGoToSelectTypeCurtain.isEnabled = true
         }
         
     }
@@ -102,8 +88,8 @@ extension ViewController {
         myLineNodes.append(lineNode)
     }
     
-    func clearWidthHeight(){
-        
+    func removeAllNode(){
+        // ลบ Node ทั้งหมดตอนกดปุ่มถังขยะ
         if !myDotNodes.isEmpty{
             for dot in myDotNodes{
                 dot.removeFromParentNode()
@@ -115,6 +101,20 @@ extension ViewController {
                 line.removeFromParentNode()
             }
             myLineNodes = [SCNNode]()
+        }
+    }
+    
+    func clearAllNode(){
+        // ลบ Node ออกจาก sceneView แต่ยังเก็บข้อมูลไว้ใน myDotNodes,myLineNodes
+        if !myDotNodes.isEmpty{
+            for dot in myDotNodes{
+                dot.removeFromParentNode()
+            }
+        }
+        if !myLineNodes.isEmpty{
+            for line in myLineNodes{
+                line.removeFromParentNode()
+            }
         }
     }
 }

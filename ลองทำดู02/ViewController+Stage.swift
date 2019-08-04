@@ -13,11 +13,23 @@ extension ViewController {
     
     func initStage(){
         
-        lblTitle.text = config.todoForStage[0]
-//        btnClearWidthHeight.isHidden = false
+        lblTitle.text = config.todoForStage[myStage]
+        
+        sceneView.addSubview(btnStackView)
+        
+        let btnDeleteWidthHeignt = createDeleteWidthHeightBtn()
+        btnGoToSelectTypeCurtain = createGoToNextStageBtn()
+        btnGoToSelectTypeCurtain.isEnabled = false
+        
+        createStackView(with: NSLayoutConstraint.Axis.horizontal)
+        btnStackView.addArrangedSubview(btnDeleteWidthHeignt)
+        btnStackView.addArrangedSubview(btnGoToSelectTypeCurtain)
+
     }
     
     func changeTitle (stage: Int){
+        
+        lblTitle.text = config.todoForStage[myStage]
         
 //        print("Click====>" + clickBtn.restorationIdentifier!)
 //        lblTitle.text = config.todoForStage[myStage]
@@ -42,5 +54,29 @@ extension ViewController {
 //        }
         
     }
+    
+    func removeAllButtonFromStack(){
+//      for (index, element) in stackView.arrangedSubviews.enumerated() { print(index, ":", element) }
+        for (_, element) in btnStackView.arrangedSubviews.enumerated() {
+            element.removeFromSuperview()
+        }
+    }
+    
+    func goStage1(){
+//        removeAllButtonFromStack()
+
+        clearAllNode()
+        
+        setTableView()
+        btnStackView.isHidden = true
+        lblTitle.isHidden = true
+        
+    }
+    
+    
+    func x1(){
+        
+    }
+    
  
 }

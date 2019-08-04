@@ -17,6 +17,11 @@
 		5739114422E34C8C0022BF4B /* ViewController+Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5739114122E34C8C0022BF4B /* ViewController+Stage.swift */; };
 		5739114522E34C8C0022BF4B /* ViewController+Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5739114222E34C8C0022BF4B /* ViewController+Measure.swift */; };
 		5739114722E34CA50022BF4B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5739114622E34CA50022BF4B /* Config.swift */; };
+		5776631D22F5CC4300B2F7A5 /* CurtainColorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5776631C22F5CC4300B2F7A5 /* CurtainColorListViewController.swift */; };
+		5776631F22F5CC9100B2F7A5 /* CurtainColorListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5776631E22F5CC9100B2F7A5 /* CurtainColorListCell.swift */; };
+		57D5656522ED5B9D000436CF /* CurtainTypeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D5656422ED5B9D000436CF /* CurtainTypeListViewController.swift */; };
+		57D5656722ED5BF7000436CF /* CurtainTypeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D5656622ED5BF7000436CF /* CurtainTypeListCell.swift */; };
+		57D5656922ED6CF4000436CF /* CurtainTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D5656822ED6CF4000436CF /* CurtainTypeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		5739114122E34C8C0022BF4B /* ViewController+Stage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Stage.swift"; sourceTree = "<group>"; };
 		5739114222E34C8C0022BF4B /* ViewController+Measure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Measure.swift"; sourceTree = "<group>"; };
 		5739114622E34CA50022BF4B /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		5776631C22F5CC4300B2F7A5 /* CurtainColorListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurtainColorListViewController.swift; sourceTree = "<group>"; };
+		5776631E22F5CC9100B2F7A5 /* CurtainColorListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurtainColorListCell.swift; sourceTree = "<group>"; };
+		57D5656422ED5B9D000436CF /* CurtainTypeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurtainTypeListViewController.swift; sourceTree = "<group>"; };
+		57D5656622ED5BF7000436CF /* CurtainTypeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurtainTypeListCell.swift; sourceTree = "<group>"; };
+		57D5656822ED6CF4000436CF /* CurtainTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurtainTypeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +81,11 @@
 				5739114222E34C8C0022BF4B /* ViewController+Measure.swift */,
 				5739114122E34C8C0022BF4B /* ViewController+Stage.swift */,
 				5739113222E3496B0022BF4B /* Main.storyboard */,
+				57D5656422ED5B9D000436CF /* CurtainTypeListViewController.swift */,
+				5776631C22F5CC4300B2F7A5 /* CurtainColorListViewController.swift */,
+				57D5656822ED6CF4000436CF /* CurtainTypeCell.swift */,
+				57D5656622ED5BF7000436CF /* CurtainTypeListCell.swift */,
+				5776631E22F5CC9100B2F7A5 /* CurtainColorListCell.swift */,
 				5739113522E3496C0022BF4B /* Assets.xcassets */,
 				5739113722E3496C0022BF4B /* LaunchScreen.storyboard */,
 				5739113A22E3496C0022BF4B /* Info.plist */,
@@ -151,10 +166,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57D5656922ED6CF4000436CF /* CurtainTypeCell.swift in Sources */,
+				5776631D22F5CC4300B2F7A5 /* CurtainColorListViewController.swift in Sources */,
 				5739113122E3496B0022BF4B /* ViewController.swift in Sources */,
+				5776631F22F5CC9100B2F7A5 /* CurtainColorListCell.swift in Sources */,
 				5739114322E34C8C0022BF4B /* ViewController+Button.swift in Sources */,
+				57D5656522ED5B9D000436CF /* CurtainTypeListViewController.swift in Sources */,
 				5739112D22E3496B0022BF4B /* AppDelegate.swift in Sources */,
 				5739114522E34C8C0022BF4B /* ViewController+Measure.swift in Sources */,
+				57D5656722ED5BF7000436CF /* CurtainTypeListCell.swift in Sources */,
 				5739114422E34C8C0022BF4B /* ViewController+Stage.swift in Sources */,
 				5739114722E34CA50022BF4B /* Config.swift in Sources */,
 			);
